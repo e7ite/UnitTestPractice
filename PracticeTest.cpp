@@ -20,3 +20,31 @@ TEST(PracticeTest, is_simple_palindrome)
     bool actual = obj.isPalindrome("aa");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, is_palindrome_noon)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("noon");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_palindrome_repaper)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("repaper");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_palindrome_rpullup)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("pullup");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_palindrome_devoted)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("devoted");
+    ASSERT_TRUE(actual);
+}
