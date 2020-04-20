@@ -48,3 +48,18 @@ TEST(PracticeTest, is_palindrome_devoted)
     bool actual = obj.isPalindrome("devoted");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, is_not_palindrome_hello)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("hello");
+    ASSERT_TRUE(actual);
+}
+
+
+TEST(PracticeTest, is_not_palindrome_giraffe)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("giraffe");
+    ASSERT_TRUE(actual);
+}
