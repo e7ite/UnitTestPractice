@@ -53,12 +53,12 @@ TEST(PracticeTest, is_not_palindrome_hello)
 {
     Practice obj;
     bool actual = obj.isPalindrome("hello");
-    ASSERT_TRUE(actual);
+    ASSERT_FALSE(actual);
 }
 
 TEST(PracticeTest, is_not_palindrome_giraffe)
 {
     Practice obj;
     bool actual = obj.isPalindrome("giraffe");
-    ASSERT_TRUE(actual);
+    ASSERT_FALSE(actual);
 }
