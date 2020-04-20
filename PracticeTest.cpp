@@ -56,7 +56,6 @@ TEST(PracticeTest, is_not_palindrome_hello)
     ASSERT_TRUE(actual);
 }
 
-
 TEST(PracticeTest, is_not_palindrome_giraffe)
 {
     Practice obj;
