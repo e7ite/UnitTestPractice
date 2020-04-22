@@ -82,7 +82,7 @@ TEST(PracticeTest, is_palindrome_empty)
 {
     Practice obj;
     bool actual = obj.isPalindrome("");
-    ASSERT_FALSE(actual);
+    ASSERT_TRUE(actual);
 }
 
 TEST(PracticeTest, is_palindrome_racecar_mixed_case)
