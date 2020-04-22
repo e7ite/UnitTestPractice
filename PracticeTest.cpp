@@ -42,7 +42,7 @@ TEST(PracticeTest, is_palindrome_rpullup)
     ASSERT_TRUE(actual);
 }
 
-TEST(PracticeTest, is_palindrome_devoted)
+TEST(PracticeTest, is_not_palindrome_devoted)
 {
     Practice obj;
     bool actual = obj.isPalindrome("devoted");
