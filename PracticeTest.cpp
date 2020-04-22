@@ -84,3 +84,10 @@ TEST(PracticeTest, is_palindrome_racecar_mixed_case)
     bool actual = obj.isPalindrome("RaCecaR");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, is_not_palindrome_hello_mixed_case)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("heLLo");
+    ASSERT_FALSE(actual);
+}
