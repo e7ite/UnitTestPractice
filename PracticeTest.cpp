@@ -113,7 +113,7 @@ TEST(PracticeTest, is_not_palindrome_with_31293120)
     ASSERT_FALSE(actual);
 }
 
-TEST(PracticeTest, is_palindrome_with_$!%!^*^!%!$)
+TEST(PracticeTest, is_palindrome_with_\$\!\%\!\^\*\^\!\%\!\$)
 {
     Practice obj;
     bool actual = obj.isPalindrome("$!%!^*^!%!$");
