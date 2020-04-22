@@ -71,7 +71,7 @@ TEST(PracticeTest, is_palindrome_racecar)
 {
     Practice obj;
     bool actual = obj.isPalindrome("racecar");
-    ASSERT_FALSE(actual);
+    ASSERT_TRUE(actual);
 }
 
 //////////////////////////////////////////////////
