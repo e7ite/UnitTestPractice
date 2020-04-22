@@ -92,10 +92,10 @@ TEST(PracticeTest, is_not_palindrome_hello_mixed_case)
     ASSERT_FALSE(actual);
 }
 
-TEST(PracticeTest, is_palindrome_pullup_with_exclamation)
+TEST(PracticeTest, is_palindrome_pullup_mixed_with_symbols)
 {
     Practice obj;
-    bool actual = obj.isPalindrome("!pullup!");
+    bool actual = obj.isPalindrome("$@!pullup!@$");
     ASSERT_TRUE(actual);
 }
 
@@ -117,5 +117,12 @@ TEST(PracticeTest, is_palindrome_with_symbols)
 {
     Practice obj;
     bool actual = obj.isPalindrome("$!%!^*^!%!$");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_not_palindrome_with_symbols)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("#@!#*$#@&!!#@");
     ASSERT_TRUE(actual);
 }
