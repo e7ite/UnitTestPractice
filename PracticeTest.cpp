@@ -77,3 +77,10 @@ TEST(PracticeTest, is_palindrome_racecar)
 //////////////////////////////////////////////////
 //              BEGIN SAD TESTS               //
 //////////////////////////////////////////////////
+
+TEST(PracticeTest, is_palindrome_racecar_mixed_case)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("RaCecaR");
+    ASSERT_TRUE(actual);
+}
