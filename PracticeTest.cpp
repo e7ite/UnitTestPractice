@@ -15,7 +15,7 @@ class PracticeTest : public ::testing::Test
 };
 
 //////////////////////////////////////////////////
-//              BEGIN HAPPY TESTS               //
+//        BEGIN isPalindrome HAPPY TESTS        //
 //////////////////////////////////////////////////
 
 TEST(PracticeTest, is_simple_palindrome)
@@ -77,6 +77,13 @@ TEST(PracticeTest, is_palindrome_racecar)
 //////////////////////////////////////////////////
 //         BEGIN isPalindrome SAD TESTS         //
 //////////////////////////////////////////////////
+
+TEST(PracticeTest, is_palindrome_empty)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("");
+    ASSERT_FALSE(actual);
+}
 
 TEST(PracticeTest, is_palindrome_racecar_mixed_case)
 {
