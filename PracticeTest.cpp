@@ -75,7 +75,7 @@ TEST(PracticeTest, is_palindrome_racecar)
 }
 
 //////////////////////////////////////////////////
-//              BEGIN SAD TESTS                 //
+//         BEGIN isPalindrome SAD TESTS         //
 //////////////////////////////////////////////////
 
 TEST(PracticeTest, is_palindrome_racecar_mixed_case)
@@ -97,6 +97,13 @@ TEST(PracticeTest, is_palindrome_pullup_mixed_with_symbols)
     Practice obj;
     bool actual = obj.isPalindrome("$@!pullup!@$");
     ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_not_palindrome_pullup_with_exclamation)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("pullup!");
+    ASSERT_FALSE(actual);
 }
 
 TEST(PracticeTest, is_palindrome_with_12321)
@@ -124,5 +131,5 @@ TEST(PracticeTest, is_not_palindrome_with_symbols)
 {
     Practice obj;
     bool actual = obj.isPalindrome("#@!#*$#@&!!#@");
-    ASSERT_TRUE(actual);
+    ASSERT_FALSE(actual);
 }
