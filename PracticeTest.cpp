@@ -39,7 +39,7 @@ TEST(PracticeTest, is_palindrome_repaper)
     ASSERT_TRUE(actual);
 }
 
-TEST(PracticeTest, is_palindrome_rpullup)
+TEST(PracticeTest, is_palindrome_pullup)
 {
     Practice obj;
     bool actual = obj.isPalindrome("pullup");
@@ -90,4 +90,11 @@ TEST(PracticeTest, is_not_palindrome_hello_mixed_case)
     Practice obj;
     bool actual = obj.isPalindrome("heLLo");
     ASSERT_FALSE(actual);
+}
+
+TEST(PracticeTest, is_palindrome_pullup_with_exclamation)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("!pullup!");
+    ASSERT_TRUE(actual);
 }
