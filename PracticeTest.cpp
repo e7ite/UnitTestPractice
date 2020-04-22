@@ -106,7 +106,6 @@ TEST(PracticeTest, is_palindrome_with_12321)
     ASSERT_TRUE(actual);
 }
 
-
 TEST(PracticeTest, is_not_palindrome_with_31293120)
 {
     Practice obj;
