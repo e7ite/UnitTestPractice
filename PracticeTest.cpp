@@ -46,7 +46,7 @@ TEST(PracticeTest, is_not_palindrome_devoted)
 {
     Practice obj;
     bool actual = obj.isPalindrome("devoted");
-    ASSERT_TRUE(actual);
+    ASSERT_FALSE(actual);
 }
 
 TEST(PracticeTest, is_not_palindrome_hello)
