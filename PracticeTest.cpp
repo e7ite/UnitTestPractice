@@ -89,14 +89,14 @@ TEST(PracticeTest, is_palindrome_sentence2)
     ASSERT_TRUE(actual);
 }
 
-TEST(PracticeTest, is_palindrome_sentence2)
+TEST(PracticeTest, is_palindrome_sentence3)
 {
     Practice obj;
     bool actual = obj.isPalindrome("Noel sees Leon");
     ASSERT_TRUE(actual);
 }
 
-TEST(PracticeTest, is_not_palindrome_sentence2)
+TEST(PracticeTest, is_not_palindrome_sentence4)
 {
     Practice obj;
     bool actual = obj.isPalindrome("Egad! Loretta has Adams as mad as a hatter. Old age!");
