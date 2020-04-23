@@ -206,6 +206,18 @@ TEST(PracticeTest, sortDescending_5_20_9)
     ASSERT_EQ(c, 5);
 }
 
+TEST(PracticeTest, sortDescending_neg3_neg2_neg1)
+{
+    Practice obj;
+    int a = -3;
+    int b = -2;
+    int c = -1;
+    obj.sortDescending(a, b, c);
+    ASSERT_EQ(a, -1);
+    ASSERT_EQ(b, -2);
+    ASSERT_EQ(c, -3);
+}
+
 
 //////////////////////////////////////////////////
 //       BEGIN sortDescending SAD TESTS        //
