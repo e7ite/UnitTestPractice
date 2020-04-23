@@ -218,7 +218,6 @@ TEST(PracticeTest, sortDescending_neg3_neg2_neg1)
     ASSERT_EQ(c, -3);
 }
 
-
 //////////////////////////////////////////////////
 //       BEGIN sortDescending SAD TESTS        //
 //////////////////////////////////////////////////
@@ -244,6 +243,18 @@ TEST(PracticeTest, sortDescending_neg5_intmin_intmax)
     obj.sortDescending(a, b, c);
     ASSERT_EQ(a, INT_MAX);
     ASSERT_EQ(b, -5);
+    ASSERT_EQ(c, INT_MIN);
+}
+
+TEST(PracticeTest, sortDescending_intmin_intmin_intmax)
+{
+    Practice obj;
+    int a = INT_MIN;
+    int b = INT_MIN;
+    int c = INT_MAX;
+    obj.sortDescending(a, b, c);
+    ASSERT_EQ(a, INT_MAX);
+    ASSERT_EQ(b, INT_MIN);
     ASSERT_EQ(c, INT_MIN);
 }
 
