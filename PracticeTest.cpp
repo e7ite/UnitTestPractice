@@ -100,7 +100,7 @@ TEST(PracticeTest, is_not_palindrome_sentence2)
 {
     Practice obj;
     bool actual = obj.isPalindrome("Egad! Loretta has Adams as mad as a hatter. Old age!");
-    ASSERT_TRUE(actual);
+    ASSERT_FALSE(actual);
 }
 
 //////////////////////////////////////////////////
