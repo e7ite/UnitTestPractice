@@ -3,6 +3,7 @@
 **/
 
 #include <gtest/gtest.h>
+#include <climits>
 #include "Practice.h"
 
 class PracticeTest : public ::testing::Test
@@ -169,13 +170,12 @@ TEST(PracticeTest, sortDescending_5_2_3)
     ASSERT_EQ(c, 2);
 }
 
-
-TEST(PracticeTest, sortDescending_40_20_10)
+TEST(PracticeTest, sortDescending_40_10_20)
 {
     Practice obj;
     int a = 40;
-    int b = 20;
-    int c = 10;
+    int b = 10;
+    int c = 20;
     obj.sortDescending(a, b, c);
     ASSERT_EQ(a, 40);
     ASSERT_EQ(b, 20);
@@ -193,6 +193,19 @@ TEST(PracticeTest, sortDescending_9_20_5)
     ASSERT_EQ(b, 9);
     ASSERT_EQ(c, 5);
 }
+
+TEST(PracticeTest, sortDescending_5_20_9)
+{
+    Practice obj;
+    int a = 5;
+    int b = 20;
+    int c = 9;
+    obj.sortDescending(a, b, c);
+    ASSERT_EQ(a, 20);
+    ASSERT_EQ(b, 9);
+    ASSERT_EQ(c, 5);
+}
+
 
 //////////////////////////////////////////////////
 //       BEGIN sortDescending SAD TESTS        //
