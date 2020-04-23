@@ -145,7 +145,7 @@ TEST(PracticeTest, is_not_palindrome_with_symbols)
 //       BEGIN sortDescending HAPPY TESTS       //
 //////////////////////////////////////////////////
 
-TEST(PracticeTest, is_descending_1_2_3)
+TEST(PracticeTest, sortDescending_1_2_3)
 {
     Practice obj;
     int a = 1;
@@ -154,5 +154,94 @@ TEST(PracticeTest, is_descending_1_2_3)
     obj.sortDescending(a, b, c);
     ASSERT_EQ(a, 3);
     ASSERT_EQ(b, 2);
+    ASSERT_EQ(c, 1);
+}
+
+TEST(PracticeTest, sortDescending_5_2_3)
+{
+    Practice obj;
+    int a = 5;
+    int b = 2;
+    int c = 3;
+    obj.sortDescending(a, b, c);
+    ASSERT_EQ(a, 5);
+    ASSERT_EQ(b, 3);
+    ASSERT_EQ(c, 2);
+}
+
+
+TEST(PracticeTest, sortDescending_40_20_10)
+{
+    Practice obj;
+    int a = 40;
+    int b = 20;
+    int c = 10;
+    obj.sortDescending(a, b, c);
+    ASSERT_EQ(a, 40);
+    ASSERT_EQ(b, 20);
+    ASSERT_EQ(c, 10);
+}
+
+TEST(PracticeTest, sortDescending_9_20_5)
+{
+    Practice obj;
+    int a = 9;
+    int b = 20;
+    int c = 5;
+    obj.sortDescending(a, b, c);
+    ASSERT_EQ(a, 20);
+    ASSERT_EQ(b, 9);
+    ASSERT_EQ(c, 5);
+}
+
+//////////////////////////////////////////////////
+//       BEGIN sortDescending SAD TESTS        //
+//////////////////////////////////////////////////
+
+TEST(PracticeTest, sortDescending_2_2_3)
+{
+    Practice obj;
+    int a = 2;
+    int b = 2;
+    int c = 3;
+    obj.sortDescending(a, b, c);
+    ASSERT_EQ(a, 3);
+    ASSERT_EQ(b, 2);
+    ASSERT_EQ(c, 2);
+}
+
+TEST(PracticeTest, sortDescending_neg5_intmin_intmax)
+{
+    Practice obj;
+    int a = -5;
+    int b = INT_MIN;
+    int c = INT_MAX;
+    obj.sortDescending(a, b, c);
+    ASSERT_EQ(a, INT_NAX);
+    ASSERT_EQ(b, -5);
+    ASSERT_EQ(c, INT_MIN);
+}
+
+TEST(PracticeTest, sortDescending_0_1_0)
+{
+    Practice obj;
+    int a = 0;
+    int b = 1;
+    int c = 0;
+    obj.sortDescending(a, b, c);
+    ASSERT_EQ(a, 1);
+    ASSERT_EQ(b, 0);
+    ASSERT_EQ(c, 0);
+}
+
+TEST(PracticeTest, sortDescending_1_1_1)
+{
+    Practice obj;
+    int a = 1;
+    int b = 1;
+    int c = 1;
+    obj.sortDescending(a, b, c);
+    ASSERT_EQ(a, 1);
+    ASSERT_EQ(b, 1);
     ASSERT_EQ(c, 1);
 }
