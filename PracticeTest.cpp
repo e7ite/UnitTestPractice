@@ -75,6 +75,34 @@ TEST(PracticeTest, is_palindrome_racecar)
     ASSERT_TRUE(actual);
 }
 
+TEST(PracticeTest, is_palindrome_sentence1)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("Sore was I ere I saw Eros");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_palindrome_sentence2)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("Noel sees Leon");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_palindrome_sentence2)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("Noel sees Leon");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_not_palindrome_sentence2)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("Egad! Loretta has Adams as mad as a hatter. Old age!");
+    ASSERT_TRUE(actual);
+}
+
 //////////////////////////////////////////////////
 //         BEGIN isPalindrome SAD TESTS         //
 //////////////////////////////////////////////////
