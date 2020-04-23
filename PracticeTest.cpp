@@ -140,3 +140,19 @@ TEST(PracticeTest, is_not_palindrome_with_symbols)
     bool actual = obj.isPalindrome("#@!#*$#@&!!#@");
     ASSERT_FALSE(actual);
 }
+
+//////////////////////////////////////////////////
+//       BEGIN sortDescending HAPPY TESTS       //
+//////////////////////////////////////////////////
+
+TEST(PracticeTest, is_descending_1_2_3)
+{
+    Practice obj;
+    int a = 1;
+    int b = 2;
+    int c = 3;
+    obj.sortDescending(a, b, c);
+    ASSERT_EQ(a, 3);
+    ASSERT_EQ(b, 2);
+    ASSERT_EQ(c, 1);
+}
