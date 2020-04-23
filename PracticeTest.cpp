@@ -230,7 +230,7 @@ TEST(PracticeTest, sortDescending_neg5_intmin_intmax)
     int b = INT_MIN;
     int c = INT_MAX;
     obj.sortDescending(a, b, c);
-    ASSERT_EQ(a, INT_NAX);
+    ASSERT_EQ(a, INT_MAX);
     ASSERT_EQ(b, -5);
     ASSERT_EQ(c, INT_MIN);
 }
