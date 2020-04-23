@@ -14,13 +14,13 @@ void Practice::sortDescending(int & first, int & second, int & third)
         {
             tmp = second;
             second = first;
-            first = second;
+            first = tmp;
         }
         if (second < third)
         {
             tmp = second;
             second = third;
-            third = second;
+            third = tmp;
             continue;
         }
         return;
